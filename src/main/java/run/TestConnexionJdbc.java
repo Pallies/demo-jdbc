@@ -1,30 +1,42 @@
 package run;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.Properties;
-import java.util.ResourceBundle;
+import java.util.List;
+
+import entites.Fournisseur;
+import jdbc.FournisseurService;
+import jdbc.InterfaceDao;
 
 public class TestConnexionJdbc {
-	private static ResourceBundle properties = ResourceBundle.getBundle("database");
 
-	private static final String DB_URL = properties.getString("MYSQL_ADDON_HOST");
-	private static final String DB_LOGIN = properties.getString("MYSQL_ADDON_USER");
-	private static final String DB_PWD = properties.getString("MYSQL_ADDON_PASSWORD");
+	private static final String NAME_FOURNISSEUR = "La Maison de la Peinture";
+	private static final String NAME_FOURNISSEUR_RETIF = "La Maison des Peintures";
 
 	public static void main(String[] args) throws SQLException {
 
+		// TODO à refaire avec logback problème de dependences
+		
+		InterfaceDao<Fournisseur> fournisseurService = new FournisseurService();
+//		insertion du fournisseur
+		Fournisseur fournisseur = new Fournisseur();
+		fournisseur.setNom(NAME_FOURNISSEUR);
+		fournisseurService.insert(fournisseur);
 
-		Connection connection = null;
-		try {
-			connection = DriverManager.getConnection(DB_URL, DB_LOGIN, DB_PWD);
-			System.out.println(connection);
-			connection.close();
-		} catch (SQLException e) {
-			connection.close();
+//		correction du nom du fournisseur dans la base de donnée
+		Fournisseur fournisseur2 = new Fournisseur();
+		fournisseur2.setNom(NAME_FOURNISSEUR_RETIF);
+		int nb = fournisseurService.update(fournisseur, fournisseur2);
+		System.out.println("nombre update "+nb);
+		
+//		suppression du fournisseur modifié
+		nb = fournisseurService.delete(fournisseur2);
+		System.out.println("nombre delete fournisseur1 "+nb);
+
+//		affichage de la liste		
+		List<Fournisseur> fournisseurs = fournisseurService.getAll();
+		for (Fournisseur f : fournisseurs) {
+			System.out.println("fournisseur "+f.getId()+" nom :"+f.getNom());
 		}
-
 	}
 
 }
