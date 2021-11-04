@@ -17,7 +17,7 @@ import entites.Fournisseur;
  * The Class FournisseurService.
  * CRUD with Statement and without Autocloseable
  */
-public class FournisseurService implements InterfaceDao<Fournisseur> {
+public class FournisseurServiceOld implements InterfaceDao<Fournisseur> {
 
 	/** The Constant TABLE_FOURNISSEUR. */
 	private static final String TABLE_FOURNISSEUR;
@@ -26,7 +26,7 @@ public class FournisseurService implements InterfaceDao<Fournisseur> {
 	private static final String PROPERTIES_FILE;
 	
 	/** The Constant LOGGER. */
-	private static final Logger LOGGER = LoggerFactory.getLogger(FournisseurService.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(FournisseurServiceOld.class);
 
 	static {
 		/** The Constant initialized */
@@ -42,7 +42,7 @@ public class FournisseurService implements InterfaceDao<Fournisseur> {
 	 */
 	@Override
 	public List<Fournisseur> getAll() {
-		LOGGER.trace("getALL");
+
 		List<Fournisseur> fournisseurs = new ArrayList<>();
 		Connection connection = ConnectionDB.getInstance();
 		Statement statement = null;
@@ -50,6 +50,7 @@ public class FournisseurService implements InterfaceDao<Fournisseur> {
 			statement = connection.createStatement();
 			ResultSet rs = statement.executeQuery("SELECT * FROM " + TABLE_FOURNISSEUR);
 			statement.close();
+			LOGGER.trace("getALL execute");
 			while (rs.next()) {
 				Fournisseur fournisseur = new Fournisseur(rs.getInt("ID"), rs.getString("NOM"));
 				fournisseurs.add(fournisseur);
@@ -92,6 +93,7 @@ public class FournisseurService implements InterfaceDao<Fournisseur> {
 				statement = conn.createStatement();
 				statement.executeUpdate("INSERT INTO " + TABLE_FOURNISSEUR + " (ID,NOM) VALUES('" + id + "','"
 						+ fournisseur.getNom() + "')");
+				LOGGER.trace("Insert execute");
 				statement.close();
 			} catch (SQLException e) {
 				autoCloseable(statement);
@@ -116,6 +118,7 @@ public class FournisseurService implements InterfaceDao<Fournisseur> {
 				statement = conn.createStatement();
 				int result= statement.executeUpdate("UPDATE " + TABLE_FOURNISSEUR + " SET NOM='" + fournisseurNew.getNom()
 						+ "' WHERE ID='" + fournisseurRef.getId() + "'");
+				LOGGER.trace("Update execute");
 				statement.close();
 				return result;
 			} catch (SQLException e) {
@@ -141,6 +144,7 @@ public class FournisseurService implements InterfaceDao<Fournisseur> {
 				statement = conn.createStatement();
 				int result = statement
 						.executeUpdate("DELETE FROM " + TABLE_FOURNISSEUR + " WHERE ID='" + fournisseur.getId() + "'");
+				LOGGER.trace("Delete execute");
 				statement.close();
 				return result;
 			} catch (SQLException e) {
