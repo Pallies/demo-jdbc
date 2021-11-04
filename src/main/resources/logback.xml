@@ -4,16 +4,14 @@
 		class="ch.qos.logback.core.ConsoleAppender">
 		<encoder>
 			<pattern>
-				[%thread] %level : %msg%n
+				%logger{n} [%thread] %level : %msg%n
 			</pattern>
 		</encoder>
 	</appender>
 	<logger name="jdbc" level="TRACE">
 		<appender-ref ref="STDOUT" />
 	</logger>
-		<logger name="jdbc.ConnectionDB" level="DEBUG">
-		<appender-ref ref="STDOUT" />
-	</logger>
+		
 		<root level="INFO">
 		<appender-ref ref="STDOUT" />
 	</root>
