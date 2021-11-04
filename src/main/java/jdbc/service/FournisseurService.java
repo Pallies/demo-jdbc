@@ -31,6 +31,9 @@ public class FournisseurService implements IFournisseurDao {
 
 	/** The Constant REFERENCE_FILE. */
 	private static final String CONNECTION_FILE;
+	
+	/** The Constant ENTITY_FILE. */
+	private static final String ENTITY_FILE;
 
 	/** The Constant REQUEST_FILE. */
 	private static final String REQUEST_FILE;
@@ -60,17 +63,21 @@ public class FournisseurService implements IFournisseurDao {
 	private static final String DELETE;
 
 	static {
+		/** The Constant initialized */
 		CONNECTION_FILE = "db-cloud";
-		ResourceBundle props = ResourceBundle.getBundle(CONNECTION_FILE);
-		URL = props.getString("MYSQL_ADDON_URL");
-		LOGIN = props.getString("MYSQL_ADDON_USER");
-		PWD = props.getString("MYSQL_ADDON_PASSWORD");
-		TABLE_FOURNISSEUR = props.getString("MYSQL_ADDON_DB") + "." + props.getString("MYSQL_TABLE_FOURNISSEUR");
+		ENTITY_FILE="entities";
+		
+		ResourceBundle connect = ResourceBundle.getBundle(CONNECTION_FILE);
+		ResourceBundle entity = ResourceBundle.getBundle(ENTITY_FILE);
+		URL = connect.getString("MYSQL_ADDON_URL");
+		LOGIN = connect.getString("MYSQL_ADDON_USER");
+		PWD = connect.getString("MYSQL_ADDON_PASSWORD");
+		TABLE_FOURNISSEUR = connect.getString("MYSQL_ADDON_DB") + "." + entity.getString("TABLE_FOURNISSEUR");
 
 		REQUEST_FILE = "request";
 		ResourceBundle request = ResourceBundle.getBundle(REQUEST_FILE);
 		INSERT = String.format(request.getString("INSERT_TABLE"), TABLE_FOURNISSEUR);
-		SELECT_ALL = String.format(request.getString("SELECTALL_TABLE"), TABLE_FOURNISSEUR);
+		SELECT_ALL = String.format(request.getString("SELECT_TABLE"), TABLE_FOURNISSEUR);
 		UPDATE = String.format(request.getString("UPDATE_TABLE"), TABLE_FOURNISSEUR);
 		DELETE = String.format(request.getString("DELETE_TABLE"), TABLE_FOURNISSEUR);
 	}

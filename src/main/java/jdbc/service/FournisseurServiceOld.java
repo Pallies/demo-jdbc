@@ -21,11 +21,14 @@ import jdbc.error.CrudErrorException;
  */
 public class FournisseurServiceOld implements IFournisseurDao {
 
-	/** The Constant TABLE_FOURNISSEUR. */
-	private static final String TABLE_FOURNISSEUR;
-
 	/** The Constant PROPERTIES_FILE. */
 	private static final String PROPERTIES_FILE;
+	
+	/** The Constant ENTITY_FILE. */
+	private static final String ENTITY_FILE;
+
+	/** The Constant TABLE_FOURNISSEUR. */
+	private static final String TABLE_FOURNISSEUR;
 
 	/** The Constant LOGGER. */
 	private static final Logger LOGGER = LoggerFactory.getLogger(FournisseurServiceOld.class);
@@ -33,8 +36,11 @@ public class FournisseurServiceOld implements IFournisseurDao {
 	static {
 		/** The Constant initialized */
 		PROPERTIES_FILE = "db-cloud";
+		ENTITY_FILE="entities";
+		
 		ResourceBundle props = ResourceBundle.getBundle(PROPERTIES_FILE);
-		TABLE_FOURNISSEUR = props.getString("MYSQL_ADDON_DB") + "." + props.getString("MYSQL_TABLE_FOURNISSEUR");
+		ResourceBundle entity = ResourceBundle.getBundle(ENTITY_FILE);
+		TABLE_FOURNISSEUR = props.getString("MYSQL_ADDON_DB") + "." + entity.getString("TABLE_FOURNISSEUR");
 	}
 
 	/**
