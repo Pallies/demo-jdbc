@@ -1,4 +1,4 @@
-package jdbc;
+package jdbc.connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -33,29 +33,40 @@ public class ConnectionDB {
 		DB_URL = properties.getString("MYSQL_ADDON_URL");
 		DB_LOGIN = properties.getString("MYSQL_ADDON_USER");
 		DB_PWD = properties.getString("MYSQL_ADDON_PASSWORD");
-
 	}
 
 	/**
 	 * Instantiates a new connection DB.
+	 *
+	 * @throws SQLException the SQL exception
 	 */
-	private ConnectionDB() {
-		try {
+	private ConnectionDB() throws SQLException {
 			connection = DriverManager.getConnection(DB_URL, DB_LOGIN, DB_PWD);
-		} catch (SQLException e) {
-		}
-
 	}
 
 	/**
 	 * Gets the single instance of ConnectionDB.
 	 *
 	 * @return single instance of ConnectionDB
+	 * @throws SQLException the SQL exception
 	 */
-	public static Connection getInstance() {
-		if (connection == null)
+	public static Connection getInstance() throws SQLException {
+		if (connection == null|| connection.isClosed())
 			new ConnectionDB();
 		return connection;
 	}
-
+	
+	/**
+	 * Connection is valid.
+	 *
+	 * @return true, if successful
+	 */
+	public static boolean connectionIsValid() {
+		boolean result = false;
+		try {
+			result = getInstance().isValid(3000);
+		} catch (SQLException e) {
+		}
+		return result;
+	}
 }

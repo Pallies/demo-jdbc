@@ -2,7 +2,6 @@ package entites;
 
 import java.util.Date;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class Bon.
  */

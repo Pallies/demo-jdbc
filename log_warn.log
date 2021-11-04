@@ -1,0 +1,90 @@
+04/11/2021  at: 13:03 jdbc.error.CrudErrorException   WARN : fail SELECT * FROMs botvtfokmckwxy474co6.FOURNISSEUR (connection at DB : true ).
+04/11/2021  at: 13:04 jdbc.error.CrudErrorException   WARN : fail query => SELECT * FROMs botvtfokmckwxy474co6.FOURNISSEUR	( connection at DB : true ).
+04/11/2021  at: 13:44 jdbc.error.CrudErrorException   WARN : fail query => SELECT * FROMs botvtfokmckwxy474co6.FOURNISSEUR	( connection at DB : true ).
+04/11/2021  at: 13:44 jdbc.error.CrudErrorException   WARN : fail query => SELECT * FROMs botvtfokmckwxy474co6.FOURNISSEUR	( connection at DB : true ).
+04/11/2021  at: 13:44 jdbc.error.CrudErrorException   WARN : fail query => INSERT INTO botvtfokmckwxy474co6.FOURNISSEUR (ID,NOM) VALUES('1','La Maison de la Peinture')	( connection at DB : true ).
+04/11/2021  at: 13:44 jdbc.error.CrudErrorException   WARN : fail query => SELECT * FROMs botvtfokmckwxy474co6.FOURNISSEUR	( connection at DB : true ).
+04/11/2021  at: 13:44 jdbc.error.CrudErrorException   WARN : fail query => SELECT * FROMs botvtfokmckwxy474co6.FOURNISSEUR	( connection at DB : true ).
+04/11/2021  at: 13:44 jdbc.error.CrudErrorException   WARN : fail query => SELECT * FROMs botvtfokmckwxy474co6.FOURNISSEUR	( connection at DB : true ).
+04/11/2021  at: 13:46 jdbc.error.CrudErrorException   WARN : fail query => {}	( connection at DB : true ).
+04/11/2021  at: 13:46 jdbc.FournisseurService   DEBUG : {}
+04/11/2021  at: 13:46 jdbc.error.CrudErrorException   WARN : fail query => {}	( connection at DB : true ).
+04/11/2021  at: 13:46 jdbc.FournisseurService   DEBUG : {}
+04/11/2021  at: 13:50 jdbc.error.CrudErrorException   WARN : fail query => {}	( connection at DB : true ).
+04/11/2021  at: 13:50 jdbc.FournisseurService   DEBUG : {}
+04/11/2021  at: 13:50 jdbc.error.CrudErrorException   WARN : fail query => {}	( connection at DB : true ).
+04/11/2021  at: 13:50 jdbc.FournisseurService   DEBUG : {}
+04/11/2021  at: 13:55 jdbc.error.CrudErrorException   WARN : fail query => {}	( connection at DB : true ).
+04/11/2021  at: 13:55 jdbc.FournisseurService   DEBUG : {}
+04/11/2021  at: 13:55 jdbc.error.CrudErrorException   WARN : fail query => {}	( connection at DB : true ).
+04/11/2021  at: 13:55 jdbc.FournisseurService   DEBUG : {}
+04/11/2021  at: 13:56 jdbc.error.CrudErrorException   WARN : fail query => {}	( connection at DB : true ).
+04/11/2021  at: 13:56 jdbc.FournisseurService   DEBUG : {}
+04/11/2021  at: 13:56 jdbc.error.CrudErrorException   WARN : fail query => {}	( connection at DB : true ).
+04/11/2021  at: 13:56 jdbc.FournisseurService   DEBUG : {}
+04/11/2021  at: 14:15 jdbc.error.CrudErrorException   WARN : fail query => {}	( connection at DB : true ).
+04/11/2021  at: 14:15 jdbc.FournisseurService   DEBUG : {}
+04/11/2021  at: 14:15 jdbc.error.CrudErrorException   WARN : fail query => {}	( connection at DB : true ).
+04/11/2021  at: 14:15 jdbc.FournisseurService   DEBUG : {}
+04/11/2021  at: 14:16 jdbc.error.CrudErrorException   WARN : fail query => {}	( connection at DB : true ).
+04/11/2021  at: 14:16 jdbc.FournisseurService   DEBUG : {}
+04/11/2021  at: 14:16 jdbc.error.CrudErrorException   WARN : fail query => {}	( connection at DB : true ).
+04/11/2021  at: 14:16 jdbc.FournisseurService   DEBUG : {}
+04/11/2021  at: 14:17 jdbc.error.CrudErrorException   WARN : fail query => {}	( connection at DB : true ).
+04/11/2021  at: 14:17 jdbc.FournisseurService   DEBUG : {}
+04/11/2021  at: 14:17 jdbc.error.CrudErrorException   WARN : fail query => {}	( connection at DB : true ).
+04/11/2021  at: 14:17 jdbc.FournisseurService   DEBUG : {}
+04/11/2021  at: 14:19 jdbc.error.CrudErrorException   WARN : fail query => {}	( connection at DB : true ).
+04/11/2021  at: 14:19 jdbc.FournisseurService   DEBUG : {}
+04/11/2021  at: 14:19 jdbc.error.CrudErrorException   WARN : fail query => {}	( connection at DB : true ).
+04/11/2021  at: 14:19 jdbc.FournisseurService   DEBUG : {}
+04/11/2021  at: 14:19 jdbc.error.CrudErrorException   WARN : fail query => 	( connection at DB : true ).
+04/11/2021  at: 14:19 jdbc.FournisseurService   DEBUG : 
+04/11/2021  at: 14:31 jdbc.error.CrudErrorException   WARN : fail query => 	( connection at DB : true ).
+04/11/2021  at: 14:31 jdbc.FournisseurService   DEBUG : 
+04/11/2021  at: 14:31 jdbc.error.CrudErrorException   WARN : fail query => 	( connection at DB : true ).
+04/11/2021  at: 14:31 jdbc.FournisseurService   DEBUG : 
+04/11/2021  at: 14:41 jdbc.error.CrudErrorException   WARN : fail query => 	( connection at DB : true ).
+04/11/2021  at: 14:41 jdbc.FournisseurService   DEBUG : 
+04/11/2021  at: 14:48 jdbc.error.CrudErrorException   WARN : fail query => 	( connection at DB : true ).
+04/11/2021  at: 14:48 jdbc.FournisseurService   DEBUG : 
+04/11/2021  at: 14:48 jdbc.error.CrudErrorException   WARN : fail query => 	( connection at DB : true ).
+04/11/2021  at: 14:48 jdbc.FournisseurService   DEBUG : 
+04/11/2021  at: 14:49 jdbc.error.CrudErrorException   WARN : fail query => 	( connection at DB : true ).
+04/11/2021  at: 14:49 jdbc.FournisseurService   DEBUG : 
+04/11/2021  at: 15:05 jdbc.error.CrudErrorException   WARN : fail query => 	( connection at DB : true ).
+04/11/2021  at: 15:05 jdbc.FournisseurService   DEBUG : 
+04/11/2021  at: 15:15 jdbc.error.CrudErrorException   WARN : fail query => 	( connection at DB : true ).
+04/11/2021  at: 15:15 jdbc.FournisseurService   DEBUG : 
+04/11/2021  at: 15:36 jdbc.error.CrudErrorException   WARN : fail query => 	( connection at DB : true ).
+04/11/2021  at: 15:36 jdbc.FournisseurService   DEBUG : 
+04/11/2021  at: 15:49 jdbc.error.CrudErrorException   WARN : fail query => 	( connection at DB : true ).
+04/11/2021  at: 15:49 jdbc.FournisseurService   DEBUG : 
+04/11/2021  at: 15:50 jdbc.error.CrudErrorException   WARN : fail query => 	( connection at DB : true ).
+04/11/2021  at: 15:50 jdbc.FournisseurService   DEBUG : 
+04/11/2021  at: 15:51 jdbc.FournisseurService   DEBUG : 
+04/11/2021  at: 16:10 jdbc.FournisseurService   DEBUG : com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM botvtfokmckwxy474co6.FOURNISSEUR
+04/11/2021  at: 22:03 jdbc.service.FournisseurService   DEBUG : SELECT * FROM botvtfokmckwxy474co6.FOURNISSEUR
+04/11/2021  at: 22:03 jdbc.service.FournisseurService   DEBUG : INSERT INTO botvtfokmckwxy474co6.FOURNISSEUR
+04/11/2021  at: 22:03 jdbc.error.CrudErrorException   WARN : fail query => SELECT * FROM botvtfokmckwxy474co6.FOURNISSEUR	( connection at DB : true ).
+04/11/2021  at: 22:07 jdbc.service.FournisseurService   DEBUG : INSERT INTO botvtfokmckwxy474co6.FOURNISSEUR
+04/11/2021  at: 22:07 jdbc.error.CrudErrorException   WARN : fail query => SELECT * FROM botvtfokmckwxy474co6.FOURNISSEUR	( connection at DB : true ).
+04/11/2021  at: 22:10 jdbc.service.FournisseurService   DEBUG : INSERT INTO botvtfokmckwxy474co6.FOURNISSEUR
+04/11/2021  at: 22:10 jdbc.service.FournisseurService   DEBUG : SELECT * FROM botvtfokmckwxy474co6.FOURNISSEUR
+04/11/2021  at: 22:10 jdbc.error.CrudErrorException   WARN : fail query => UPDATE botvtfokmckwxy474co6.FOURNISSEUR SET	( connection at DB : true ).
+04/11/2021  at: 22:13 jdbc.service.FournisseurService   DEBUG : INSERT INTO botvtfokmckwxy474co6.FOURNISSEUR
+04/11/2021  at: 22:13 jdbc.service.FournisseurService   DEBUG : SELECT * FROM botvtfokmckwxy474co6.FOURNISSEUR
+04/11/2021  at: 22:13 jdbc.error.CrudErrorException   WARN : fail query => UPDATE botvtfokmckwxy474co6.FOURNISSEUR SET	( connection at DB : true ).
+04/11/2021  at: 22:14 jdbc.service.FournisseurService   DEBUG : INSERT INTO botvtfokmckwxy474co6.FOURNISSEUR
+04/11/2021  at: 22:14 jdbc.service.FournisseurService   DEBUG : SELECT * FROM botvtfokmckwxy474co6.FOURNISSEUR
+04/11/2021  at: 22:14 jdbc.error.CrudErrorException   WARN : fail query => UPDATE botvtfokmckwxy474co6.FOURNISSEUR SET	( connection at DB : true ).
+04/11/2021  at: 22:19 jdbc.service.FournisseurService   DEBUG : DELETE FROM botvtfokmckwxy474co6.FOURNISSEUR
+04/11/2021  at: 22:19 jdbc.service.FournisseurService   DEBUG : SELECT * FROM botvtfokmckwxy474co6.FOURNISSEUR
+04/11/2021  at: 22:19 jdbc.service.FournisseurService   DEBUG : DELETE FROM botvtfokmckwxy474co6.FOURNISSEUR
+04/11/2021  at: 22:19 jdbc.service.FournisseurService   DEBUG : SELECT * FROM botvtfokmckwxy474co6.FOURNISSEUR
+04/11/2021  at: 22:22 jdbc.error.CrudErrorException   WARN : fail query => INSERT INTO botvtfokmckwxy474co6.FOURNISSEUR	( connection at DB : true ).
+04/11/2021  at: 22:24 jdbc.service.FournisseurService   DEBUG : INSERT INTO botvtfokmckwxy474co6.FOURNISSEUR
+04/11/2021  at: 22:24 jdbc.service.FournisseurService   DEBUG : SELECT * FROM botvtfokmckwxy474co6.FOURNISSEUR
+04/11/2021  at: 22:24 jdbc.service.FournisseurService   DEBUG : UPDATE botvtfokmckwxy474co6.FOURNISSEUR SET
+04/11/2021  at: 22:24 jdbc.service.FournisseurService   DEBUG : DELETE FROM botvtfokmckwxy474co6.FOURNISSEUR
+04/11/2021  at: 22:24 jdbc.service.FournisseurService   DEBUG : SELECT * FROM botvtfokmckwxy474co6.FOURNISSEUR

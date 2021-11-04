@@ -1,6 +1,5 @@
 package entites;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class Article.
  */

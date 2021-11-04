@@ -1,6 +1,5 @@
 package entites;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class Fournisseur.
  */
@@ -12,12 +11,33 @@ public class Fournisseur {
 	/** The nom. */
 	private String nom;
 
+	/**
+	 * Instantiates a new fournisseur.
+	 */
 	public Fournisseur() {
 	}
+    
+    /**
+     * Instantiates a new fournisseur.
+     *
+     * @param id the id
+     * @param nom the nom
+     */
     public Fournisseur(int id,String nom) {
     	setId(id);
     	setNom(nom);
     }
+	
+	/**
+	 * To string.
+	 *
+	 * @return the string
+	 */
+	@Override
+	public String toString() {
+		return "Fournisseur id : " + id + ", nom : " + nom ;
+	}
+	
 	/**
 	 * Gets the id.
 	 *
@@ -53,5 +73,6 @@ public class Fournisseur {
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
+
 	
 }
