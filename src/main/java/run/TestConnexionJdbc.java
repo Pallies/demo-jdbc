@@ -5,7 +5,7 @@ import java.util.List;
 
 import entites.Fournisseur;
 import jdbc.dao.IFournisseurDao;
-import jdbc.service.FournisseurService;
+import jdbc.service.factory.FournisseurServiceFactory;
 
 /**
  * The Class TestConnexionJdbc.
@@ -26,7 +26,7 @@ public class TestConnexionJdbc {
 	 */
 	public static void main(String[] args) throws SQLException {
 
-		IFournisseurDao fournisseurService = new FournisseurService();
+		IFournisseurDao fournisseurService = FournisseurServiceFactory.getFournisseurService();
 
 //		insertion du fournisseur
 		Fournisseur fournisseur = new Fournisseur();
