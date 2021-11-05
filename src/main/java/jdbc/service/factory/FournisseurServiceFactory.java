@@ -4,6 +4,7 @@ import java.util.ResourceBundle;
 
 import jdbc.dao.IFournisseurDao;
 import jdbc.service.FournisseurService;
+import jdbc.service.FournisseurServiceOld;
 
 public final class FournisseurServiceFactory {
 
@@ -25,6 +26,7 @@ public final class FournisseurServiceFactory {
 			fournisseurService = new FournisseurService();
 			break;
 		case "TEST":
+			fournisseurService = new FournisseurServiceOld();
 			break;
 		case "PROD":
 			break;
