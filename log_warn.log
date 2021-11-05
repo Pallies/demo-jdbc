@@ -88,3 +88,5 @@
 04/11/2021  at: 22:24 jdbc.service.FournisseurService   DEBUG : UPDATE botvtfokmckwxy474co6.FOURNISSEUR SET
 04/11/2021  at: 22:24 jdbc.service.FournisseurService   DEBUG : DELETE FROM botvtfokmckwxy474co6.FOURNISSEUR
 04/11/2021  at: 22:24 jdbc.service.FournisseurService   DEBUG : SELECT * FROM botvtfokmckwxy474co6.FOURNISSEUR
+05/11/2021  at: 22:40 jdbc.service.FournisseurService   DEBUG : INSERT INTO botvtfokmckwxy474co6.FOURNISSEUR
+05/11/2021  at: 22:40 jdbc.service.FournisseurService   DEBUG : SELECT * FROM botvtfokmckwxy474co6.FOURNISSEUR

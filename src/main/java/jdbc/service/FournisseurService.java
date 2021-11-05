@@ -92,8 +92,8 @@ public class FournisseurService implements IFournisseurDao {
 	public List<Fournisseur> getAll() throws SQLException {
 		List<Fournisseur> fournisseurs = new ArrayList<Fournisseur>();
 
-		try {
-			Connection conn = DriverManager.getConnection(URL, LOGIN, PWD);
+		try (Connection conn = DriverManager.getConnection(URL, LOGIN, PWD);){
+			
 			try (PreparedStatement preStatement = conn.prepareStatement(SELECT_ALL);) {
 				ResultSet rs = preStatement.executeQuery();
 				while (rs.next()) {
